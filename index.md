@@ -1,12 +1,47 @@
-## Welcome to GitHub Pages
+## Introdução
 
-You can use the [editor on GitHub](https://github.com/rafaelrabetti/python-mne/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+O python é uma linguagem de programação interpretada e de alto nível. Criada por Guido van Rossum e lançada em 1991, o python tem uma filosofia de design que enfatiza a legibilidade do código, usando a identação para separar os blocos de código. O python possui tipagem dinâmica e gerenciamento de memória automático. Tem suporte para uma variedade de paradigmas de programação, que incluem, o orientado a objetos, imperativo, funcional e procedural.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+```python
+x = 1
+if x == 1:
+  print ("Hello Python!")
+``` 
 
-### Markdown
+## Instalação
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Windows
+
+#### Step 1: Faça o download do instalador
+1. Abra o navegador e vá até a página de [download para Windows](https://www.python.org/downloads/windows/) em [python.org](https://www.python.org/).
+
+2. Na lista de links onde diz Python Releases for Windows, clique no link com a última versão do python 3.6.x (o qual usaremos nesse mini-tutorial).
+
+3. Seleciona a opção _Windows x86-64 executable installer_ para sistemas de 64-bit ou _Windows x86 executable installer_ para 32-bits.
+
+#### Step 2: Execute o instalador
+
+Uma vez escolhido e feito o download do instalador, basta executá-lo. Uma janela como essa irá abrir: ![python-janela](https://files.realpython.com/media/win-install-dialog.40e3ded144b0.png)
+
+**Importante:** Tenha certeza que você marcou a opção que diz Adicione Python 3.x to PATH como mostrado acima para que o interpretador seja colocado no local de execução.
+
+Após isso, apenas clique em Instalar.
+
+### Linux
+
+Nas distribuições do Ubuntu 17.10 e Ubuntu 18.04, o python 3.6 já vem instalado por padrão.
+
+Nas distribuições do Ubuntu 16.10 e 17.04, o python não vem instalado por padrão porém o pacote já vem disponível no repositório universal, não sendo necessário realizar o primeiro passo.
+
+Nas outras distribuições do Ubuntu e no Linux Mint os passos abaixo são todos necessários.
+
+```
+$ sudo add-apt-repository ppa:deadsnakes/ppa
+$ sudo apt-get update
+$ sudo apt-get install python3.6
+``` 
+
+## Mais
 
 ```markdown
 Syntax highlighted code block
