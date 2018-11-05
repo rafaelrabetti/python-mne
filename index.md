@@ -291,22 +291,45 @@ Podemos testar se a solução anterior está correta da seguinte maneira.
 True
 
 ```
-## Mais
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Matplotlib
 
-- Bulleted
-- List
+Uma biblioteca muito útil para plotar gráficos em Python é a matplotlib. Existem duas formas de se criar um gráfico usando matplotlib. Usando a própria interface que implicitamente cria figuras e gráficos como desejado.
 
-1. Numbered
-2. List
+```python
 
-**Bold** and _Italic_ and `Code` text
+import matplotlib.pyplot as plt
+import numpy as np
 
-[Link](url) and ![Image](src)
+x = np.linspace(0, 2, 100)
+
+plt.plot(x, x, label='linear')
+plt.plot(x, x**2, label='quadratic')
+plt.plot(x, x**3, label='cubic')
+
+plt.xlabel('x label')
+plt.ylabel('y label')
+
+plt.title("Simple Plot")
+
+plt.legend()
+
+plt.show()
+
 ```
+![matplotlib](matplotlib.png)
+
+Ou então podemos usar o pyplot para chamar por exemplo o `np.arange` e criar manualmente as figuras e gráficos.
+
+```python
+
+x = np.arange(0, 10, 0.2) 
+y = np.sin(x)
+fig, ax = plt.subplots() # cria uma figura com apenas um gráfico
+ax.plot(x, y) # na figura criada, plota a função sin(x) no intervalo (0 - 10) com espaçamento de 0.2
+plt.show()
+
+``` 
+
+![matplotlib2](matplotlib2.png)
