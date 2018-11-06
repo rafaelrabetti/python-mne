@@ -21,7 +21,9 @@ if x == 1:
 
 #### Step 2: Execute o instalador
 
-Uma vez escolhido e feito o download do instalador, basta executá-lo. Uma janela como essa irá abrir: ![python-janela](https://files.realpython.com/media/win-install-dialog.40e3ded144b0.png)
+Uma vez escolhido e feito o download do instalador, basta executá-lo. Uma janela como essa irá abrir: 
+
+![python-janela](https://files.realpython.com/media/win-install-dialog.40e3ded144b0.png)
 
 **Importante:** Tenha certeza que você marcou a opção que diz Adicione Python 3.x to PATH como mostrado acima para que o interpretador seja colocado no local de execução.
 
