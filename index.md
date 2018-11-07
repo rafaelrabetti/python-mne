@@ -105,7 +105,7 @@ array([[ 1.5,  2. ,  3. ],
 >>> type(b)
 <type 'numpy.ndarray'>
 >>> b.dtype
-dtype('int64')
+dtype('float64')
 
 ```
 
