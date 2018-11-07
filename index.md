@@ -45,6 +45,8 @@ $ sudo apt-get install python3.6
 
 ### Bibliotecas
 
+#### Linux
+
 Neste tutorial estaremos usando duas bibliotecas nos nossos exemplos, NumPy e Matplotlib. Segue aqui como instalá-las. Primeiramente, instale o `pip`.
 
 `sudo apt install python3-pip`
@@ -57,6 +59,48 @@ Agora instalaremos alguns pacotes do SciPy, nos quais estão incluso o NumPy e o
 
 ` python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose `
 
+Após ter instalado com sucesso, é só abrir uma janela do terminal e rodar o comando `python3` ou `python3.6`. Você verá uma janela como essa ao importar a biblioteca.
+
+```
+Python 3.6.5 (default, Mar 29 2018, 03:28:50) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> np.version.version
+'1.14.3'
+>>> 
+
+```
+
+#### Windows
+
+Primeiramente instale o [Microsoft Visual C++ 2017 Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads). Tenha certeza que selecionou a versão correspondente ao seu Python (32 ou 64 bits).
+
+Agora faça o download do NumPy na versão correspondente ao seu Python [aqui](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy).
+
+Agora faça o download do SciPy na versão correspondente ao seu Python [aqui](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
+
+Agora faça o download do Matplotlib na versão correspondente ao seu Python [aqui](http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib).
+
+Agora abra uma janela `cmd`. A ideia é abrir a janela `cmd` na pasta onde você baixou os arquivos acima. Use os próximos comandos para instalar o *NumPy*, *SciPy* e *Matplotlib*:
+
+```
+pip install "numpy‑1.14.2+mkl‑cp36‑cp36m‑win32.whl"   # substitua pelo seu arquivo
+pip install "scipy‑1.0.1‑cp36‑cp36m‑win32.whl"
+pip install "matplotlib‑2.2.2‑cp36‑cp36m‑win32.whl"
+```
+
+Após cada um desses comandos, você deve ver uma mensagem de sucesso ao instalar. Agora inicie o Python em uma janela de `cmd` e você conseguirá importar as bibliotecas.
+
+```
+C:\Users\X\Downloads>python
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> np.version.version
+'1.14.3'
+>>>
+```
 
 ## Um Pouco de Python
 
