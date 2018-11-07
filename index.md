@@ -71,7 +71,7 @@ arg = float(input('Valor do argumento: '))
 iter = int(input('Número de iterações: '))
 
 x = 1
-for i in range(iter)
+for i in range(iter):
   x = x - (x**2 - arg) / (2 * x)
   
 print('Raiz quadrada:', x)
