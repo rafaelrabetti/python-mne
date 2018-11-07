@@ -47,6 +47,10 @@ $ sudo apt-get install python3.6
 
 Neste tutorial estaremos usando duas bibliotecas nos nossos exemplos, NumPy e Matplotlib. Segue aqui como instalá-las. Primeiramente, instale o `pip`.
 
+`sudo apt install python3-pip`
+
+Agora atualize o pip.
+
 `python -m pip install -U pip`
 
 Agora instalaremos alguns pacotes do SciPy, nos quais estão incluso o NumPy e o Matplotlib
